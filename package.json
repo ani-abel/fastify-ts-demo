@@ -1,0 +1,34 @@
+{
+  "name": "fastify-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "test": "NODE_ENV=test npx jest --verbose --runInBand",
+    "build": "rimraf dist && tsc --sourceMap -p ./",
+    "dev": "ts-node --files ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^26.0.13",
+    "@types/mongodb": "^3.5.27",
+    "@types/mongoose": "^5.7.36",
+    "fastify": "^3.3.0",
+    "fastify-blipp": "^3.0.0",
+    "fastify-oas": "^3.0.3",
+    "fastify-plugin": "^2.3.3",
+    "fastify-swagger": "^3.3.0",
+    "jest": "^26.4.2",
+    "mongoose": "^5.10.3",
+    "ts-jest": "^26.3.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.4"
+  }
+}
